@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import Project from './../Projects/Project';
 import Education from './../Education/Education';
 import Skill from './../Skills/Skill';
+import Certificate from './../Cerificate/Certificate';
 
 
 
@@ -24,8 +25,8 @@ export const router = createBrowserRouter([
                 element:<Education/>,
             },
             {
-                path:'/skills',
-                element:<Skill></Skill>,
+                path:'/certificate',
+                element:<Certificate/>,
             },
         ]
 

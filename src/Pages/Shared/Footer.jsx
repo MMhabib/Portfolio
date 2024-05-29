@@ -3,10 +3,10 @@
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10  mt-96 bg-neutral text-neutral-content">
+            <footer className="footer p-10  mt-1 bg-neutral text-neutral-content">
             
             <div className='footer-container p-5'>
-            <p><small>All copyright reserved - Md.Arafat Hossain</small>
+            <p><small>All copyright reserved - M.M HABIB</small>
             
             </p> 
                 <h4>📧 habib.se56@gmail.com</h4>

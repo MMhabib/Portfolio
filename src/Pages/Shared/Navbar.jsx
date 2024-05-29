@@ -26,7 +26,7 @@ const Navbar = () => {
   <ul className="menu menu-horizontal px-1">
       <li className="font-extrabold hover:text-red-500"><Link to='/'>Home</Link></li>
       <li className="font-bold hover:text-red-500"><Link to='/projects'>Projects</Link></li>
-      <li className="font-bold hover:text-red-500"><Link to='/skills'>Skills</Link></li>
+      <li className="font-bold hover:text-red-500"><Link to='/certificate'>Certificate</Link></li>
       <li className="font-bold hover:text-red-500"><Link to='/education'>Education</Link></li>
       
       
