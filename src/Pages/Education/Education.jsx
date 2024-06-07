@@ -1,8 +1,9 @@
 
+import Education from './Education';
 const Education = () => {
     return (
         <div>
-            
+            Education
         </div>
     );
 };
