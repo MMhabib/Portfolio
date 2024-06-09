@@ -12,10 +12,10 @@ const Navbar = () => {
       </div>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
       <li className="font-extrabold hover:text-red-500"><Link to='/'>Home</Link></li>
-      <li className="font-bold hover:text-red-500"><Link to='/projects'>Projects</Link></li>
-      <li className="font-bold hover:text-red-500"><Link to='/certificate'>Certificate</Link></li>
-      <li className="font-bold hover:text-red-500"><Link to='/education'>Education</Link></li>
-      <li className="font-bold hover:text-red-500"><Link to='/contact'>Contact</Link></li>
+      <li className="font-extrabold hover:text-red-500"><Link to='/projects'>Projects</Link></li>
+      <li className="font-extrabold hover:text-red-500"><Link to='/certificate'>Certificate</Link></li>
+      <li className="font-extrabold hover:text-red-500"><Link to='/education'>Education</Link></li>
+      <li className="font-extrabold hover:text-red-500"><Link to='/contact'>Contact</Link></li>
       </ul>
     </div>
    <h1 className="text-4xl ">HABIB</h1>
@@ -26,10 +26,10 @@ const Navbar = () => {
   <div className="navbar-end hidden lg:flex">
   <ul className="menu menu-horizontal px-1">
       <li className="font-extrabold hover:text-red-500"><Link to='/'>Home</Link></li>
-      <li className="font-bold hover:text-red-500"><Link to='/projects'>Projects</Link></li>
-      <li className="font-bold hover:text-red-500"><Link to='/certificate'>Certificate</Link></li>
-      <li className="font-bold hover:text-red-500"><Link to='/education'>Education</Link></li>
-      <li className="font-bold hover:text-red-500"><Link to='/contact'>Contact</Link></li>
+      <li className="font-extrabold hover:text-red-500"><Link to='/projects'>Projects</Link></li>
+      <li className="font-extrabold hover:text-red-500"><Link to='/certificate'>Certificate</Link></li>
+      <li className="font-extrabold hover:text-red-500"><Link to='/education'>Education</Link></li>
+      <li className="font-extrabold hover:text-red-500"><Link to='/contact'>Contact</Link></li>
       
       
     </ul>

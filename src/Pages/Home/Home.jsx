@@ -71,7 +71,6 @@ const Home = () => {
             'Full Stack Web Developer.', 
             'Studies BSc in CSE at BAIUST.',
             'Ongoing Internship at IPIT Limited',
-            'Assistant Secretary at BAIUST Computer Club.',
             'Former Instructor (Web Design) at Baiust Computer Club.',
            
             
@@ -89,7 +88,7 @@ const Home = () => {
             <p className="text-lg max-w-2xl p-6 mt-16 mb-16">
               I am a web developer with a passion for creating beautiful and
               functional web applications. My skills include HTML, CSS,
-              JavaScript, 
+              JavaScript,React
             </p>
            
           </div>
