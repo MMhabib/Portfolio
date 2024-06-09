@@ -54,7 +54,7 @@ const Education = () => {
           </h1>
           <h3>Cumilla, Bangladesh</h3>
           <h2 className="font-semibold">Secondary School Certificate (SSC)</h2>
-          <p>March 2020 - March 2024</p>
+          <p>January 2011 - March 2016 </p>
           {/* <div className="card-actions justify-end">
             <button className="btn btn-primary">Listen</button>
           </div> */}
@@ -74,7 +74,7 @@ const Education = () => {
           </h1>
           <h3>Cumilla, Bangladesh</h3>
           <h2 className="font-semibold">Primary School Certificate (PSC)</h2>
-          <p>March 2020 - March 2024</p>
+          <p>January 2010 - December 2010</p>
           {/* <div className="card-actions justify-end">
             <button className="btn btn-primary">Listen</button>
           </div> */}

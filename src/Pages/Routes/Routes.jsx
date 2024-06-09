@@ -5,6 +5,7 @@ import Project from './../Projects/Project';
 import Education from './../Education/Education';
 import Skill from './../Skills/Skill';
 import Certificate from './../Cerificate/Certificate';
+import Contact from './../Contact/Contact';
 
 
 
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
             {
                 path:'/certificate',
                 element:<Certificate/>,
+            },
+            {
+                path:'/contact',
+                element:<Contact/>,
             },
         ]
 

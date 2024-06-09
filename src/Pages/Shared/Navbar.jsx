@@ -15,6 +15,7 @@ const Navbar = () => {
       <li className="font-bold hover:text-red-500"><Link to='/projects'>Projects</Link></li>
       <li className="font-bold hover:text-red-500"><Link to='/certificate'>Certificate</Link></li>
       <li className="font-bold hover:text-red-500"><Link to='/education'>Education</Link></li>
+      <li className="font-bold hover:text-red-500"><Link to='/contact'>Contact</Link></li>
       </ul>
     </div>
    <h1 className="text-4xl ">HABIB</h1>
@@ -28,6 +29,7 @@ const Navbar = () => {
       <li className="font-bold hover:text-red-500"><Link to='/projects'>Projects</Link></li>
       <li className="font-bold hover:text-red-500"><Link to='/certificate'>Certificate</Link></li>
       <li className="font-bold hover:text-red-500"><Link to='/education'>Education</Link></li>
+      <li className="font-bold hover:text-red-500"><Link to='/contact'>Contact</Link></li>
       
       
     </ul>
