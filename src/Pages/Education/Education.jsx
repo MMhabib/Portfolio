@@ -1,7 +1,7 @@
 const Education = () => {
   return (
-    <div>
-      <div className="card lg:card-side bg-base-100 shadow-xl m-6 mx-14">
+    <div className="bg-slate-400 py-4 mt-4 mb-0 ">
+      <div className="card lg:card-side  bg-base-100 shadow-xl m-6  mx-14">
         <figure className="m-6 p-2">
           <img className="border rounded-md"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfdHdcg6tnvQq-V9OPo2W7A0e0mt1dtBmJxQ&s"
@@ -64,7 +64,7 @@ const Education = () => {
       <div className="card lg:card-side bg-base-100 shadow-xl m-6 mx-14">
         <figure className="m-6 p-2">
           <img className="border rounded-md"
-            src="https://upload.wikimedia.org/wikipedia/en/c/c6/Comilla_Zilla_School.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-WAynZop1XsDA7LSNJ7AxQLh6Yn6KMLx1g&s"
             alt="Album"
           />
         </figure>
@@ -75,6 +75,26 @@ const Education = () => {
           <h3>Cumilla, Bangladesh</h3>
           <h2 className="font-semibold">Primary School Certificate (PSC)</h2>
           <p>January 2010 - December 2010</p>
+          {/* <div className="card-actions justify-end">
+            <button className="btn btn-primary">Listen</button>
+          </div> */}
+        </div>
+
+      </div>
+      <div className="card lg:card-side bg-base-100 shadow-xl m-6 mx-14">
+        <figure className="m-6 p-2">
+          <img className="border rounded-md"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3eMIGMSMDglSDeLQfp80bttz9541ycYpX-g&s"
+            alt="Album"
+          />
+        </figure>
+        <div className="card-body lg:ml-96">
+          <h1 className="card-title">
+          YWCA OF CUMILLA
+          </h1>
+          <h3>Cumilla, Bangladesh</h3>
+          <h2 className="font-semibold">Studied from Nursery To Class-4</h2>
+          <p>January 2004 - December 2009</p>
           {/* <div className="card-actions justify-end">
             <button className="btn btn-primary">Listen</button>
           </div> */}
