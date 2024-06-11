@@ -32,12 +32,17 @@ import cpp from '../../assets/logo/cpp.png'
 import { motion, AnimatePresence } from "framer-motion";
 import Marquee from "react-fast-marquee";;
 
+
+
+
+
 const Home = () => {
   const transition = {
     duration: 1,
     type: "spring",
   };
   return (
+    
     <div className="flex flex-col min-h-screen">
       <header className="bg-gray-800 text-white py-6 text-center">
         <h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>
@@ -208,6 +213,7 @@ const Home = () => {
         <p className='img-skill mt-3'><img src={firebase} alt="" /> Firebase</p>
     
       </div> */}
+      
     </div>
   );
 };

@@ -6,12 +6,13 @@ const Footer = () => {
             <footer className="footer p-10  mt-1 bg-neutral text-neutral-content">
             
             <div className='footer-container p-5'>
-            <p><small>All copyright reserved - M.M HABIB</small>
+            <p>All copyright reserved - M.M HABIB
             
             </p> 
-                <h4>📧 habib.se56@gmail.com</h4>
-                <small>📞 +880 10709004842</small> 
-                <small>🏠 Cumilla 3500, BD</small>
+                <h3>📧 habib.se56@gmail.com</h3>
+                <h3>📞 +880 10709004842 </h3>
+
+                <h3>🏠 Cumilla 3500, BD</h3>
         
             </div>
 
