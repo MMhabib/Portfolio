@@ -29,10 +29,10 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_bi56zcn", // Replace with your EmailJS service ID
-        "template_sycap9h", // Replace with your EmailJS template ID
+        "service_bi56zcn", 
+        "template_sycap9h", 
         templateParams,
-        "bNht-iqjfzokWhBEw" // Replace with your EmailJS user ID
+        "bNht-iqjfzokWhBEw"
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
@@ -60,7 +60,7 @@ const Contact = () => {
             send me a message about anything that you want me to work on. You
             can contact me anytime.
           </p>
-          <div className="space-y-4">
+          <div className="space-y-4 ">
             <div className="flex items-center space-x-3">
               <img
                 src="https://placehold.co/24x24"
@@ -85,18 +85,18 @@ const Contact = () => {
                 alt="location"
                 className="w-6 h-6"
               />
-              <span className="text-lg">CA, United States</span>
+              <span className="text-lg">CUMILLA, BANGLADESH</span>
             </div>
           </div>
         </div>
-        <div>
+        <div className="md:flex justify-center items-center">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label>Name:</label>
               <input
                 type="text"
                 name="name"
-                className="mt-1 block w-full bg-zinc-800 border border-zinc-700 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="mt-1 block w-full md:w-96 lg:w-96 bg-zinc-800 border border-zinc-700 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -107,7 +107,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
-                className="mt-1 block w-full bg-zinc-800 border border-zinc-700 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="mt-1 block w-full md:w-96 lg:w-96 bg-zinc-800 border border-zinc-700 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -118,7 +118,7 @@ const Contact = () => {
               <textarea
                 name="message"
                 rows="4"
-                className="mt-1 block w-full bg-zinc-800 border border-zinc-700 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="mt-1 block w-full md:w-96 lg:w-96 bg-zinc-800 border border-zinc-700 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
                 value={formData.message}
                 onChange={handleChange}
                 required
@@ -127,7 +127,7 @@ const Contact = () => {
             <div>
               <button
                 type="submit"
-                className="w-full py-2 px-4 bg-purple-600 hover:bg-purple-700 rounded-md text-white font-semibold"
+                className="w-full lg:w-96 md:w-96 py-2 px-4 bg-purple-600 hover:bg-purple-700 rounded-md text-white font-semibold"
               >
                 Submit
               </button>
@@ -135,8 +135,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <ToastContainer position="top-center"
-  reverseOrder={true} />
+      <ToastContainer position="top-center" reverseOrder={true} />
     </div>
   );
 };
