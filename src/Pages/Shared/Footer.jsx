@@ -4,16 +4,15 @@ import { SocialIcon } from "react-social-icons";
 const Footer = () => {
     return (
         <div>
+          
             <footer className="footer p-10  mt-1 bg-neutral text-neutral-content">
             
             <div className='footer-container p-5'>
-            <p>All copyright reserved - M.M HABIB
-            
-            </p> 
-                <h3>📧 habib.se56@gmail.com</h3>
-                <h3>📞 +880 10709004842 </h3>
-
-                <h3>🏠 Cumilla 3500, BD</h3>
+            <p className="">All copyright reserved - M.M HABIB
+            </p>
+                <h1 className="text-lg">📧 habib.se56@gmail.com</h1>
+                <h2 className="text-lg">📞 +880 10709004842 </h2>
+                <h2 className="text-lg">🏠 Cumilla 3500, BD</h2>
         
             </div>
 
@@ -27,7 +26,9 @@ const Footer = () => {
     
     </div>
   </nav>
+   
 </footer>
+
         </div>
     );
 };
