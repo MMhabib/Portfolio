@@ -26,7 +26,7 @@ const Footer = () => {
     
     </div>
   </nav>
-   
+   <p className="h-"></p>
 </footer>
 
         </div>

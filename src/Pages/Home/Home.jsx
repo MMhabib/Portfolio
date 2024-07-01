@@ -30,7 +30,10 @@ import c from '../../assets/logo/c.png'
 import csharp from '../../assets/logo/csharp.png'
 import cpp from '../../assets/logo/cpp.png'
 import { motion, AnimatePresence } from "framer-motion";
-import Marquee from "react-fast-marquee";;
+import Marquee from "react-fast-marquee";
+import Contact from "../Contact/Contact";
+import { Link } from "react-router-dom";
+;
 
 
 
@@ -60,13 +63,18 @@ const Home = () => {
                 />
               </figure>
             </div>
+            <div >
             <a
               href={d} download={d.pdf}
               
-              className="mt-6 px-6 py-3 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600"
+              className="mt-6 px-4 py-2 btn bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600"
             >
-              Download CV
+              Download Resume
             </a>
+            <button className="mt-6 ml-2 px-6 py-3 btn bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600"  ><Link to='/contact'>Contact Me</Link> </button>
+
+            </div>
+            
           </div>
           <div className="flex flex-col  items-center text-center lg:items-start lg:text-left w-full lg:w-2/3 ml-0 lg:ml-10 border-2 border-sky-500">
           <span className='s-text'>
