@@ -29,11 +29,11 @@ const Project = () => {
                     Password: Akib#@321 <br />
                     Certificate Verification: <br />
                     Department: CSE <br /> 
-                    Student ID: 1111019 <br />
+                    Student ID: 1111051<br />
                 </p>
                 <div className="card-actions  sm:justify-center lg:justify-end">
-                    <a href="https://daisyui.com/components/collapse/"><button className="btn btn-outline btn-info">Live site</button></a>
-                    <button className="btn btn-outline btn-accent">Server site</button>
+                    <a href="https://github.com/MMhabib/OnlineBookSellFrontend.git"><button className="btn btn-outline btn-info">Client site</button></a>
+                    <a href="https://github.com/MMhabib/OnlinebookseellServer.git"><button className="btn btn-outline btn-accent">Server site</button></a>
                 </div>
             </div>
         </div>

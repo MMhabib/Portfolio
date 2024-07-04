@@ -55,11 +55,11 @@ const Home = () => {
         <div className="flex flex-col p-8 md:flex-row   items-center md:items-start md:justify-center w-full  ">
           <div className="flex flex-col items-center mb-4  md:mb-0 md:mr-8">
             <div className="card card-compact h-96 w-72 bg-base-100 shadow-xl">
-              <figure className="h-full w-full">
+              <figure className="h-full w-full ">
                 <img
                   src={a}
                   alt="Profile"
-                  className="object-cover h-full w-full rounded-t-lg"
+                  className="object-cover h-full w-full rounded-t-lg "
                 />
               </figure>
             </div>
