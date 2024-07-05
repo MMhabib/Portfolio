@@ -1,0 +1,29 @@
+/* In your CSS file (e.g., styles.css) */
+@keyframes vibrate {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-2px);
+    }
+    50% {
+      transform: translateX(2px);
+    }
+    75% {
+      transform: translateX(-2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .vibrate {
+    animation: vibrate 0.3s linear infinite;
+    animation-iteration-count: 3; /* Runs the animation 3 times */
+  }
+  
+  .vibrate-container {
+    animation: vibrate 0.3s linear infinite;
+    animation-duration: 3s; /* Adjust this duration to control the frequency of the vibration */
+  }
+  

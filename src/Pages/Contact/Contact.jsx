@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import CallMeButton from "./Callme";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -87,6 +88,7 @@ const Contact = () => {
               />
               <span className="text-lg">CUMILLA, BANGLADESH</span>
             </div>
+            <CallMeButton/>
           </div>
         </div>
         <div className="md:flex justify-center items-center">
@@ -134,9 +136,11 @@ const Contact = () => {
             </div>
           </form>
         </div>
+        
       </div>
       <ToastContainer position="top-center" reverseOrder={true} />
     </div>
+    
   );
 };
 
