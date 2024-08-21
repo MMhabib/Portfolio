@@ -60,13 +60,13 @@ const projects = [
     alt: "441900993-1833189517164108-8520224708537517379-n",
     details: (
       <>
-        <ul>
+        <ul >
           <li>• Developed a Bookstore.</li>
           <li>• User Can Buy and Sell Books.</li>
           <li>• Made an admin dashboard with versatile functionalities.</li>
           <li>• Developed an intuitive User dashboard with functionalities.</li>
         </ul>
-        <h3 className="text-sky-400 font-bold">Admin Login:</h3>
+        {/* <h3 className="text-sky-400 font-bold">Admin Login:</h3>
         Email: admin1@gmail.com <br />
         Password: Admin#@321 <br />
         Student Login: <br />
@@ -74,7 +74,10 @@ const projects = [
         Password: Akib#@321 <br />
         Certificate Verification: <br />
         Department: CSE <br />
-        Student ID: 1111019<br />
+        Student ID: 1111019<br /> */}
+        <h1 className='text-lg font-semibold my-2'>Tools & Technology:</h1 > 
+        <p className='font-medium '>React, TailwindCss, DaisyUI, React Router, Node.Js, ExpressJS, 
+          <span>JSON web token (JWT), Firebase, MongoDB, Vercel, Render, Git, VS Code.</span></p>
       </>
     ),
     liveSite: "https://daisyui.com/components/collapse/",

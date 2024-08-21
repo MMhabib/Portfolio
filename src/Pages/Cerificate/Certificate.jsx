@@ -5,7 +5,7 @@ const Certificate = () => {
             <h1>s</h1>
             
  
-  
+            
 
         </div>
     );

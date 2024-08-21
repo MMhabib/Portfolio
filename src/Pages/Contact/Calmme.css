@@ -19,11 +19,11 @@
   
   .vibrate {
     animation: vibrate 0.3s linear infinite;
-    animation-iteration-count: 3; /* Runs the animation 3 times */
+    animation-iteration-count: 5; /* Runs the animation 3 times */
   }
   
   .vibrate-container {
     animation: vibrate 0.3s linear infinite;
-    animation-duration: 3s; /* Adjust this duration to control the frequency of the vibration */
+    animation-duration: 1s; /* Adjust this duration to control the frequency of the vibration */
   }
   

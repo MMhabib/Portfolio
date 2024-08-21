@@ -33,6 +33,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import Contact from "../Contact/Contact";
 import { Link } from "react-router-dom";
+
 ;
 
 
@@ -71,7 +72,9 @@ const Home = () => {
             >
               Download Resume
             </a>
-            <button className="mt-6 ml-2 px-6 py-3 btn bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600"  ><Link to='/contact'>Contact Me</Link> </button>
+            
+
+             <button className="mt-6 ml-2 px-6 py-3 btn bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600"  ><Link to='/contact'>Contact Me</Link> </button>
 
             </div>
             
@@ -83,7 +86,7 @@ const Home = () => {
             'I am M.M Habib.', 
             'Full Stack Web Developer.', 
             'Studies BSc in CSE at BAIUST.',
-            'Ongoing Internship at IPIT Limited',
+            'Done My Internship at IPIT Limited',
             'Former Instructor (Web Design) at Baiust Computer Club.',
            
             
