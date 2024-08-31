@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import i from '../../assets/bookstore.png';
-
+import j from '../../assets/halabrotheer.jpg'
 const projects = [
   {
     title: "OnlineBookstore",
@@ -29,7 +29,7 @@ const projects = [
     serverSite: "https://github.com/MMhabib/OnlinebookseellServer.git"
   },
   {
-    title: "OnlineBookstore",
+    title: "HalaBrotherRestuarant",
     imgSrc: i,
     alt: "441900993-1833189517164108-8520224708537517379-n",
     details: (
