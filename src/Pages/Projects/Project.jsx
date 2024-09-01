@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import i from '../../assets/bookstore.png';
-import j from '../../assets/halabrotheer.jpg'
+import j from '../../assets/logo/halalbro.jpg';
+
 const projects = [
   {
     title: "OnlineBookstore",
@@ -18,8 +19,8 @@ const projects = [
         Email: admin1@gmail.com <br />
         Password: Admin#@321 <br />
         Student Login: <br />
-        Email: akib@gmail.com <br />
-        Password: Akib#@321 <br />
+        Email: habib@gmail.com <br />
+        Password: habib#@321 <br />
         Certificate Verification: <br />
         Department: CSE <br />
         Student ID: 1111051<br />
@@ -30,28 +31,29 @@ const projects = [
   },
   {
     title: "HalaBrotherRestuarant",
-    imgSrc: i,
+    imgSrc: j,
     alt: "441900993-1833189517164108-8520224708537517379-n",
     details: (
       <>
         <ul>
-          <li>• Developed a Bookstore.</li>
-          <li>• User Can Buy and Sell Books.</li>
+          <li>• Developed a website for Restuarant management.</li>
+          <li>• Customers can give online orders through this website.</li>
+          <li>• Customers can create account for see order history or list their favourite items.</li>
           <li>• Made an admin dashboard with versatile functionalities.</li>
-          <li>• Developed an intuitive User dashboard with functionalities.</li>
+          <li>• Owner can manage payments,orders and everything related to testuarant.</li>
         </ul>
         <h3 className="text-sky-400 font-bold">Admin Login:</h3>
         Email: admin1@gmail.com <br />
         Password: Admin#@321 <br />
-        Student Login: <br />
+        Customer Login: <br />
         Email: akib@gmail.com <br />
         Password: Akib#@321 <br />
         Certificate Verification: <br />
         Department: CSE <br />
-        Student ID: 1111019<br />
+        Student ID: 111105<br />
       </>
     ),
-    liveSite: "https://daisyui.com/components/collapse/",
+    clientSite: "https://github.com/MMhabib/Halal-brother-frontend-restaurant.git",
     serverSite: "#"
   },
   {
@@ -112,17 +114,17 @@ const Project = () => {
             <p>{project.details}</p>
             <div className="card-actions sm:justify-center lg:justify-end">
               {project.clientSite && (
-                <a href={project.clientSite}>
+                <a href={project.clientSite} target="_blank" rel="noopener noreferrer">
                   <button className="btn btn-outline btn-info">Client site</button>
                 </a>
               )}
               {project.serverSite && (
-                <a href={project.serverSite}>
+                <a href={project.serverSite} target="_blank" rel="noopener noreferrer">
                   <button className="btn btn-outline btn-accent">Server site</button>
                 </a>
               )}
               {project.liveSite && (
-                <a href={project.liveSite}>
+                <a href={project.liveSite} target="_blank" rel="noopener noreferrer">
                   <button className="btn btn-outline btn-info">Live site</button>
                 </a>
               )}
