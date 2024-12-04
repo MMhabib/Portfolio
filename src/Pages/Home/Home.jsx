@@ -1,7 +1,7 @@
 import { RiTailwindCssFill } from "react-icons/ri";
 import './Home.css'
 import a from '../../assets/Picsart_24-04-04_00-02-31-240.jpg'
-import d from '../../assets/HabibResume.pdf'
+import d from '../../assets/M.M habib.pdf'
 import { Typewriter } from 'react-simple-typewriter';
 import bootstrap from '../../assets/logo/bootstrap.png'
 import css  from '../../assets/logo/css.png'
