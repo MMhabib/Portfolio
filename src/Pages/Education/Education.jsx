@@ -26,7 +26,7 @@ const Education = () => {
         </div>
       </div>
       <div
-        
+       
         className="card lg:card-side bg-base-100 shadow-xl m-6 mx-14"
       >
         <figure className="m-6 p-2">
