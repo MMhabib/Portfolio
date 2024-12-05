@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import i from '../../assets/bookstore.png';
 import j from '../../assets/logo/halalbro.jpg';
+import { Helmet } from 'react-helmet-async';
 
 const projects = [
   {
@@ -137,6 +138,9 @@ const Project = () => {
           {showMore ? 'See Less' : 'See More'}
         </button>
       </div>
+      <Helmet>
+        <title>Habib | Projects</title>
+      </Helmet>
     </div>
   );
 };

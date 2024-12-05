@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 
 const Education = () => {
   return (
@@ -96,6 +97,9 @@ const Education = () => {
           <p>January 2004 - December 2009</p>
         </div>
       </div>
+      <Helmet>
+        <title>Habib | Education</title>
+      </Helmet>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import CallMeButton from "./Callme";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -139,6 +140,9 @@ const Contact = () => {
         
       </div>
       <ToastContainer position="top-center" reverseOrder={true} />
+      <Helmet>
+        <title>Habib | Conatct</title>
+      </Helmet>
     </div>
     
   );

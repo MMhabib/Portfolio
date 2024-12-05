@@ -33,6 +33,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import Contact from "../Contact/Contact";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 ;
 
@@ -124,7 +125,7 @@ const Home = () => {
     <h1 className='flickxyz h11 signboardAA'>Skills</h1>
     <div className='skills-con' >
 
-      <div className='divide signboardAA'>
+      <div  data-aos="zoom-in" data-aos-duration="2000" className='divide signboardAA'>
         <u><h1 className='flickxyz d-header'>Front-End</h1></u>
         <p className='img-skill mt-3'><img src={html} alt="" /> HTML</p>
         <p className='img-skill mt-3'><img src={css} alt="" /> CSS</p>
@@ -140,7 +141,7 @@ const Home = () => {
     
       </div>
 
-      <div className='divide signboardAA' >
+      <div data-aos="zoom-in" data-aos-duration="2000" className='divide signboardAA' >
         <u><h1 className='flickxyz d-header'>Back-End</h1></u>
         <p className='img-skill mt-3'><img src={node} alt="" /> Node.js</p>
         <p className='img-skill mt-3'><img src={express} alt="" /> Express.js</p>
@@ -149,7 +150,7 @@ const Home = () => {
         <p className='img-skill mt-3'><img src={dotenv} alt="" /> Dotenv</p>
         <p className='img-skill mt-3'><img src={render} alt="" /> Render</p>
       </div>
-      <div className='divide signboardAA'>
+      <div data-aos="zoom-in" data-aos-duration="2000" className='divide signboardAA'>
         <u><h1 className='flickxyz d-header'>Tools & Tech</h1></u>
         <p className='img-skill mt-3'><img src={vscode} alt="" /> VSCode</p>
         <p className='img-skill mt-3'><img src={pycharm} alt="" /> PyCharm</p>
@@ -160,7 +161,7 @@ const Home = () => {
         <p className='img-skill mt-3'><img src={heroku} alt="" /> Heroku</p>
         
       </div>
-      <div className='divide signboardAA'>
+      <div data-aos="zoom-in" data-aos-duration="2000" className='divide signboardAA'>
         <u><h1 className='flickxyz d-header'>Programming Language</h1></u>
         <p className='img-skill mt-3'><img src={python} alt="" /> Python</p>
         <p className='img-skill mt-3'><img src={js} alt="" /> JavaScript</p>
@@ -224,7 +225,9 @@ const Home = () => {
         <p className='img-skill mt-3'><img src={firebase} alt="" /> Firebase</p>
     
       </div> */}
-      
+      <Helmet>
+        <title>Habib | Home</title>
+      </Helmet>
     </div>
   );
 };

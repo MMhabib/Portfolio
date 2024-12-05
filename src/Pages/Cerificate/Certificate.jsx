@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 
 const Certificate = () => {
     return (
@@ -6,7 +7,9 @@ const Certificate = () => {
             
  
             
-
+            <Helmet>
+        <title>Habib | Certificate</title>
+      </Helmet>
         </div>
     );
 };
