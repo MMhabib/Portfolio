@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { SocialIcon } from 'react-social-icons'; // Import the SocialIcon component if you are using it
 
 const Footer = () => {
