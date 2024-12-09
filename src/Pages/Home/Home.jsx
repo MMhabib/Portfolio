@@ -1,7 +1,8 @@
-import { RiTailwindCssFill } from "react-icons/ri";
+/* eslint-disable no-unused-vars */
+
 import './Home.css'
 import a from '../../assets/Picsart_24-04-04_00-02-31-240.jpg'
-import d from '../../assets/M.M habib.pdf'
+import d from '../../assets/M.M-Habib.pdf'
 import { Typewriter } from 'react-simple-typewriter';
 import bootstrap from '../../assets/logo/bootstrap.png'
 import css  from '../../assets/logo/css.png'
@@ -29,13 +30,13 @@ import python from '../../assets/logo/python.png'
 import c from '../../assets/logo/c.png'
 import csharp from '../../assets/logo/csharp.png'
 import cpp from '../../assets/logo/cpp.png'
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
-import Contact from "../Contact/Contact";
+
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
-;
+
 
 
 
@@ -85,7 +86,7 @@ const Home = () => {
           <Typewriter
             words={['Hello!', 
             'I am M.M Habib.', 
-            'Full Stack Web Developer.', 
+            'Full Stack Web Developer.',
             'Studies BSc in CSE at BAIUST.',
             'Done My Internship at IPIT Limited',
             'Former Instructor (Web Design) at Baiust Computer Club.',
@@ -103,9 +104,7 @@ const Home = () => {
           />
         </span>
             <p className="text-lg max-w-2xl p-6 mt-16 mb-16">
-              I am a web developer with a passion for creating beautiful and
-              functional web applications. My skills include HTML, CSS,
-              JavaScript,React
+            A confident, passionate, determined, and self-taught individual, seeking various opportunities to explore and research in the area of computer science.
             </p>
            
           </div>

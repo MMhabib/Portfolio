@@ -8,7 +8,7 @@ AOS.init();
 
 const Main = () => {
     return (
-        <div>
+        <div >
             <Navbar/>
             <Outlet/>
             <Footer/>
