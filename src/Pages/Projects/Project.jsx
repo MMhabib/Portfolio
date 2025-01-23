@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import i from '../../assets/bookstore.png';
 import j from '../../assets/logo/halalbro.jpg';
+import d from '../../assets/Dashboard.png';
 import { Helmet } from 'react-helmet-async';
 
 const projects = [
@@ -58,8 +59,8 @@ const projects = [
     serverSite: "#"
   },
   {
-    title: "OnlineBookstore",
-    imgSrc: i,
+    title: "Admin_Dashboard",
+    imgSrc: d,
     alt: "441900993-1833189517164108-8520224708537517379-n",
     details: (
       <>
@@ -97,7 +98,7 @@ const Project = () => {
     setShowMore(!showMore);
   };
 
-  const visibleProjects = showMore ? projects : projects.slice(0, 2);
+  const visibleProjects = showMore ? projects : projects.slice(0, 3);
 
   return (
     <div>
