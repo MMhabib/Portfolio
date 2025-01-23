@@ -65,12 +65,10 @@ const projects = [
     alt: "441900993-1833189517164108-8520224708537517379-n",
     details: (
       <>
-        <ul >
-          <li>• Developed a Bookstore.</li>
-          <li>• User Can Buy and Sell Books.</li>
-          <li>• Made an admin dashboard with versatile functionalities.</li>
-          <li>• Developed an intuitive User dashboard with functionalities.</li>
-        </ul>
+        <p>
+        The Admin Dashboard is a comprehensive React.js application designed to manage and visualize various administrative tasks. This project utilizes multiple libraries and components to create a responsive, interactive, and user-friendly interface. It includes various features such as data visualization, user management, order processing, and customizable themes.
+        </p>
+        <p>The Admin Dashboard is a well-structured React application that leverages various libraries and custom components to create a functional and visually appealing interface. The use of Context API for state management ensures a seamless user experience, while the extensive use of conditional rendering and dynamic styles makes the application highly customizable and responsive.</p>
         {/* <h3 className="text-sky-400 font-bold">Admin Login:</h3>
         Email: admin1@gmail.com <br />
         Password: Admin#@321 <br />
@@ -82,7 +80,7 @@ const projects = [
         Student ID: 1111019<br /> */}
         <h1 className='text-lg font-semibold my-2'>Tools & Technology:</h1 > 
         <p className='font-medium '>React, TailwindCss, DaisyUI, React Router, Node.Js, ExpressJS, 
-          <span>JSON web token (JWT), Firebase, MongoDB, Vercel, Render, Git, VS Code.</span></p>
+          <span>JSON web token (JWT), Firebase, MongoDB, Git, VS Code.</span></p>
       </>
     ),
     liveSite: "https://daisyui.com/components/collapse/",
