@@ -89,7 +89,7 @@ const Home = () => {
             'Full Stack Web Developer.',
             'Studies BSc in CSE at BAIUST.',
             'Done My Internship at IPIT Limited',
-            'Former Instructor (Web Design) at Baiust Computer Club.',
+            
            
             
             
