@@ -83,8 +83,8 @@ const projects = [
           <span>JSON web token (JWT), Firebase, MongoDB, Git, VS Code.</span></p>
       </>
     ),
-    liveSite: "https://daisyui.com/components/collapse/",
-    serverSite: "#"
+    ClientSite: "https://github.com/MMhabib/Admin_dashboard.git",
+    
   },
   
   // Add more projects as needed
