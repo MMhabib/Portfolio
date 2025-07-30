@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+          * {
+            font-family: 'Poppins', sans-serif;
+          }
+          .marquee-inner {
+            animation: marqueeScroll 50s linear infinite;
+          }
+          @keyframes marqueeScroll {
+            0% {
+              transform: translateX(0%);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          .marquee-inner2 {
+            animation: marqueeScroll 20s linear infinite;
+          }
+          @keyframes marqueeScroll {
+            0% {
+              transform: translateX(0%);
+            }
+            100% {
+              transform: translateX(-40%);
+            }
+          }
