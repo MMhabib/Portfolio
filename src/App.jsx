@@ -41,9 +41,10 @@ function App() {
         
         
         <Skills />
-        <Experience />
         <Work />
         <Education />
+        <Experience />
+        
         <Contact />
         <Footer />
         

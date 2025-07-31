@@ -1,5 +1,6 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaLinkedin,  } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 
 const Footer = () => {
   // Smooth scroll function
@@ -34,15 +35,18 @@ const Footer = () => {
             </button>
           ))}
         </nav>
-
+{/* <a href="https://github.com/MMhabib"><FaGithub  className="h-8 w-8  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a>
+            <a href="https://www.linkedin.com/in/mmhabib/"><FaLinkedin   className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  "/></a>
+            <a href="https://www.facebook.com/habibczs/"><FaFacebook  className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a> */}
         {/* Social Media Icons - Responsive */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
-            { icon: <FaFacebook />, link: "https://www.facebook.com/tarun.kaushik.3511041/" },
-            { icon: <FaTwitter />, link: "https://twitter.com/CodingMaster6?s=09" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/tarun-kaushik-553b441a4" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/coding_.master/" },
-            { icon: <FaYoutube />, link: "https://www.youtube.com/codingmasteryt" },
+            { icon: <FaFacebook />, link: "https://www.facebook.com/habibczs/" },
+            
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/mmhabib/" },
+            { icon: <FaGithub />, link: "https://github.com/MMhabib" },
+            
+            
             
           ].map((item, index) => (
             <a
@@ -50,7 +54,7 @@ const Footer = () => {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl hover:text-purple-500 transition-transform transform hover:scale-110"
+              className="text-xl  hover:text-purple-500 transition-transform transform hover:scale-110"
             >
               {item.icon}
             </a>

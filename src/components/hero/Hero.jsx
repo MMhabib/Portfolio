@@ -2,10 +2,10 @@ import { useRef } from "react";
 import "./style.css";
 import { skillsData } from "../../constants";
 import profile from "../../assets/habib.png";
-import githublogo from '../../assets/tech_logo/github.png'
+
 import logo from "../../assets/logo.png";
 import { TypewriterEffectSmooth } from "../TypewriterEffectSmooth";
-import { FaFacebook, FaGithub, FaLinkedin, FaSquareGithub } from "react-icons/fa6";
+import { FaFacebook, FaGithub, FaLinkedin,} from "react-icons/fa6";
 
 const Hero = () => {
   const menuRef = useRef(null);
@@ -61,12 +61,13 @@ const Hero = () => {
             <a href="#projects" className="hover:text-gray-300">
               Projects
             </a>
-            <a href="#experience" className="hover:text-gray-300">
-              Experience
-            </a>
             <a href="#education" className="hover:text-gray-300">
               Education
             </a>
+            <a href="#experience" className="hover:text-gray-300">
+              Experience
+            </a>
+            
             <a href="#contact" className="hover:text-gray-300">
               Contact
             </a>
@@ -91,7 +92,7 @@ const Hero = () => {
               </svg>
             </button>
           </div>
-          <div className=" flex space-x-2 xl:space-x-4 max-lg:hidden text-white  font-medium drop-shadow-lg drop-shadow-blue-700 ">
+          <div className=" flex space-x-2 lg:space-x-4 max-md:hidden text-white  font-medium drop-shadow-lg drop-shadow-blue-700 ">
             <a href="https://github.com/MMhabib"><FaGithub  className="h-8 w-8  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a>
             <a href="https://www.linkedin.com/in/mmhabib/"><FaLinkedin   className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  "/></a>
             <a href="https://www.facebook.com/habibczs/"><FaFacebook  className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a>
@@ -147,7 +148,7 @@ const Hero = () => {
 
 
             <div className="flex flex-col md:flex-row items-center mt-4 gap-3">
-              <button
+              <a  href="https://drive.google.com/drive/folders/1m16qxO1jWbYK4rPHbjDRiHk_C30-9o-o?usp=drive_link" > <button 
                 className="bg-indigo-600 text-white text-base px-6 pr-2.5 py-2.5 rounded-full  font-medium flex items-center space-x-2 hover:bg-indigo-700 transition"
                 type="button"
               >
@@ -168,6 +169,7 @@ const Hero = () => {
                   />
                 </svg>
               </button>
+              </a>
               <a
                 href="#contact"
                 className="text-indigo-600 bg-indigo-100 px-5 py-2 rounded-full text-base font-medium hover:bg-indigo-200 transition"
@@ -179,7 +181,7 @@ const Hero = () => {
           <div  className=" pb-6 flex justify-center items-center   ">
             <img
               alt="A professional woman working on a laptop"
-              className="h-96 max-w-96 w-fit rounded-b-2xl hover:scale-105 transition duration-300 object-cover flex-shrink-0  "
+              className="h-96 max-w-96 w-fit rounded-b-2xl hover:scale-150 transition duration-300 object-cover flex-shrink-0  "
               src={profile}
             />
           </div>
