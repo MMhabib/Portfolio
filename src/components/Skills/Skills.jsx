@@ -1,5 +1,6 @@
 // src/components/Skills/Skills.jsx
 
+
 import { SkillsInfo } from "../../constants";
 import Tilt from "react-parallax-tilt";
 
@@ -15,7 +16,7 @@ const Skills = () => {
     className="  font-sans bg-skills-gradient clip-path-custom sm:px-4"
   >
     {/* Section Title */}
-    <div className="text-center mb-8">
+    <div data-aos="zoom-in-down" data-aos-duration="1000" className="text-center mb-8">
       <h2 className="text-3xl sm:text-4xl font-bold text-white">SKILLS</h2>
       <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-2"></div>
       <p className="text-gray-400 mt-4 text-lg font-semibold">
@@ -66,6 +67,7 @@ const Skills = () => {
         </div>
       ))}
     </div>
+    
   </section>
 )};
 

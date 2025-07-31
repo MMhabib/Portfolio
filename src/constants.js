@@ -42,15 +42,9 @@ import newtonschoolLogo from "./assets/company_logo/newtonschool_logo.png";
 // Education Section Logo's
 
 // Project Section Logo's
-import githubdetLogo from "./assets/work_logo/github_det.png";
-import csprepLogo from "./assets/work_logo/cs_prep.png";
-import movierecLogo from "./assets/work_logo/movie_rec.png";
-import taskremLogo from "./assets/work_logo/task_rem.png";
-import npmLogo from "./assets/work_logo/npm.png";
-import webverLogo from "./assets/work_logo/web_dig.png";
-import cmLogo from "./assets/work_logo/cm.png";
-import imagesearchLogo from "./assets/work_logo/image_search.png";
-import removebgLogo from "./assets/work_logo/remove_bg.png";
+import carrental from './assets/work_logo/Carrental.jpg'
+import Admin from './assets/work_logo/Admin.jpg'
+import recipeapp from './assets/work_logo/recipeapp.jpg'
 
 export const skillsData = [
   { name: "HTML", logo: htmlLogo },
@@ -129,9 +123,9 @@ export const experiences = [
   {
     id: 0,
     img: webverseLogo,
-    role: "Fullstack Developer",
-    company: "Webverse Digital",
-    date: "April 2024 - Present",
+    role: "Software Developer(Intern)",
+    company: "IPIT LIMITED",
+    date: "March 2024 - June 2024",
     desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
     skills: [
       "HTML",
@@ -146,32 +140,7 @@ export const experiences = [
       " Next Js",
     ],
   },
-  {
-    id: 1,
-    img: agcLogo,
-    role: "Fullstack Engineer",
-    company: "Agumentik Group of Companies",
-    date: "July 2023 - March 2024",
-    desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-    skills: [
-      "ReactJS",
-      "Redux",
-      "JavaScript",
-      "Tailwind CSS",
-      "HTML",
-      "CSS",
-      "SQL",
-    ],
-  },
-  {
-    id: 2,
-    img: newtonschoolLogo,
-    role: "Frontend Intern",
-    company: "Newton School",
-    date: "September 2021 - August 2022",
-    desc: "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, Bootstrap, and Material UI. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
-    skills: ["HTML", "CSS", "Javascript", "Bootstrap", "Figma", "Material UI"],
-  },
+  
 ];
 
 export const educations = [
@@ -229,7 +198,7 @@ export const projects = [
     title: "Car Rental",
     description:
       "A full-stack car rental platform built with MERN Stack (MongoDB, Express.js, React, Node.js). The application allows users to browse, search, and book rental cars with options to filter by location, date, and car type. Admins can manage cars and user roles. The UI is responsive and styled using Tailwind CSS, with additional features like authentication, dynamic search, and booking management. It includes secure user authentication with role-based access, persistent data storage with MongoDB, and smooth navigation using React Router. The app is optimized for both desktop and mobile users, providing a seamless and modern rental experience",
-    image: githubdetLogo,
+    image: carrental,
 
     logos: [
       { name: "HTML", logo: htmlLogo },
@@ -257,7 +226,7 @@ The dashboard includes sidebar navigation, light/dark mode toggle, and responsiv
 Icons and charts are implemented using libraries like react-icons and chart.js or recharts.
 Ideal for use in admin panels, analytics platforms, or business dashboards.
 Deployed for quick preview and ready for backend integration.`,
-    image: csprepLogo,
+    image: Admin,
     logos: [
       { name: "HTML", logo: htmlLogo },
       { name: "CSS", logo: cssLogo },
@@ -276,7 +245,7 @@ Deployed for quick preview and ready for backend integration.`,
     title: "Recipe-Finding App",
     description:
       `Recipe Finder App is a responsive web application that allows users to search and explore a wide range of recipes using The Meal Database API. Users can find recipes either by entering a recipe name or a specific recipe ID. Upon selection, the app displays detailed information including the ingredients, preparation instructions, and an embedded video tutorial if available. Built using React, it provides a smooth and dynamic user experience. React Router is utilized for client-side routing to enable seamless navigation across pages. Video playback is handled through React Player, ensuring compatibility with YouTube content. The application is designed to be intuitive and informative, helping users quickly discover and learn new recipes. This project demonstrates API integration, component-based architecture, and video embedding in React.`,
-    image: movierecLogo,
+    image: recipeapp,
    logos: [
       { name: "HTML", logo: htmlLogo },
       { name: "CSS", logo: cssLogo },
@@ -288,64 +257,5 @@ Deployed for quick preview and ready for backend integration.`,
     github: "https://github.com/MMhabib/Recipe-finding.git",
     webapp: "https://recipe-finding-xi.vercel.app/",
   },
-  {
-    id: 3,
-    title: "Email Validator NPM Package",
-    description:
-      "An efficient and customizable NPM package for validating email addresses. Built using React.js and Node.js, it provides robust validation features to help developers ensure that email inputs meet required formats and standards.",
-    image: taskremLogo,
-    logos: [reactjsLogo, nodejsLogo, npmLogo],
-    github: "https://github.com/codingmastr/cmtk-email-validator",
-    webapp: "https://www.npmjs.com/package/cmtk-email-validator",
-  },
-  {
-    id: 4,
-    title: "Task Reminder Chrome Extension Tool",
-    description:
-      "A productivity-boosting Chrome extension designed to help users manage and remember their daily tasks. Built using JavaScript, it offers a simple interface with reminders and task notifications to keep users on track.",
-    image: taskremLogo,
-    logos: [javascriptLogo, htmlLogo, cssLogo],
-    github: "https://github.com/codingmastr/Task-Reminder-Tool",
-    webapp: "chrome://extensions/?id=kngheeibjnnidhfoomkpnbeghackheci",
-  },
-  {
-    id: 5,
-    title: "Webverse Digital",
-    description:
-      "The official website for Webverse Digital, a creative digital marketing agency. Built using HTML, CSS, and JavaScript, it features visually appealing animations and a clean design to showcase the agency's services.",
-    image: webverLogo,
-    logos: [htmlLogo, cssLogo, javascriptLogo, firebaseLogo],
-    github: "https://github.com/codingmastr/Webverse-Digital",
-    webapp: "https://webversedigital.com/",
-  },
-  {
-    id: 6,
-    title: "Coding Master",
-    description:
-      "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
-    image: cmLogo,
-    logos: [reactjsLogo, nodejsLogo, mongodbLogo, expressjsLogo],
-    github: "https://codingmasterweb.in/",
-    webapp: "https://codingmasterweb.in/",
-  },
-  {
-    id: 7,
-    title: "Image Search App",
-    description:
-      "A React.js-based image search application that allows users to search and download high-quality images from the web. Built using external APIs to ensure a vast library of results for various queries.",
-    image: imagesearchLogo,
-    logos: [reactjsLogo, cssLogo, javascriptLogo],
-    github: "https://github.com/codingmastr/Image-Search-App",
-    webapp: "https://imagsearch.netlify.app/",
-  },
-  {
-    id: 8,
-    title: "Image Background Remover",
-    description:
-      "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
-    image: removebgLogo,
-    logos: [reactjsLogo, htmlLogo, cssLogo, javascriptLogo],
-    github: "https://github.com/codingmastr/Image-Background-Remover",
-    webapp: "https://removeyourbg.netlify.app/",
-  },
+  
 ];

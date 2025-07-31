@@ -7,6 +7,7 @@ import logo from "../../assets/logo.png";
 import { TypewriterEffectSmooth } from "../TypewriterEffectSmooth";
 import { FaFacebook, FaGithub, FaLinkedin,} from "react-icons/fa6";
 
+
 const Hero = () => {
   const menuRef = useRef(null);
 
@@ -28,8 +29,9 @@ const Hero = () => {
 
   return (
     <>
+    
       <section
-        id="about"
+        id="home"
         className="flex flex-col items-center bg-gradient-to-b from-black to-[#1A0033] text-white pb-16 text-sm"
       >
         <img
@@ -51,7 +53,7 @@ const Hero = () => {
             className="flex items-center md:gap-6 lg:gap-8 xl:gap-12  font-medium text-base max-md:text-base md:max-lg:text-sm
              max-md:fixed max-md:top-0 max-md:left-0 max-md:w-0 max-md:h-screen max-md:bg-black/80 max-md:backdrop-blur max-md:transition-all max-md:duration-300 max-md:overflow-auto max-md:flex-col max-md:space-y-6  max-md:justify-center max-md:items-center z-50"
           >
-            <a href="#about" className="hover:text-gray-300 ">
+            <a href="#home" className="hover:text-gray-300 ">
               About
             </a>
             <a href="#skills" className="hover:text-gray-300">
@@ -93,9 +95,9 @@ const Hero = () => {
             </button>
           </div>
           <div className=" flex space-x-2 lg:space-x-4 max-md:hidden text-white  font-medium drop-shadow-lg drop-shadow-blue-700 ">
-            <a href="https://github.com/MMhabib"><FaGithub  className="h-8 w-8  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a>
-            <a href="https://www.linkedin.com/in/mmhabib/"><FaLinkedin   className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  "/></a>
-            <a href="https://www.facebook.com/habibczs/"><FaFacebook  className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a>
+            <a target="blank" href="https://github.com/MMhabib"><FaGithub  className="h-8 w-8  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a>
+            <a target="blank" href="https://www.linkedin.com/in/mmhabib/"><FaLinkedin   className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  "/></a>
+            <a target="blank" href="https://www.facebook.com/habibczs/"><FaFacebook  className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a>
           </div>
           <button
             onClick={openMenu}
@@ -210,6 +212,7 @@ const Hero = () => {
 
           <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-[#1A0033] to-transparent"></div>
         </div>
+        
       </section>
     </>
   );

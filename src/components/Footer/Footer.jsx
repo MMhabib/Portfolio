@@ -35,10 +35,7 @@ const Footer = () => {
             </button>
           ))}
         </nav>
-{/* <a href="https://github.com/MMhabib"><FaGithub  className="h-8 w-8  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a>
-            <a href="https://www.linkedin.com/in/mmhabib/"><FaLinkedin   className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  "/></a>
-            <a href="https://www.facebook.com/habibczs/"><FaFacebook  className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a> */}
-        {/* Social Media Icons - Responsive */}
+
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
             { icon: <FaFacebook />, link: "https://www.facebook.com/habibczs/" },

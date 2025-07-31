@@ -6,6 +6,7 @@ import Marquee from "react-fast-marquee";
 
 
 
+
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -145,6 +146,7 @@ const Work = () => {
           </div>
         </div>
       )}
+      
     </section>
   );
 };
