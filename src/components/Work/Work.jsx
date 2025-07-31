@@ -57,7 +57,7 @@ const Work = () => {
           onClick={handleCloseModal} // Close modal on clicking outside
         >
           <div
-            className="bg-gray-900 max-h-screen overflow-y-auto rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl mx-auto overflow-hidden relative"
+            className="bg-gray-900 max-h-screen overflow-y-auto rounded-xl shadow-2xl lg:w-full w-[90%]  max-w-3xl overflow-hidden relative"
             onClick={(e) => e.stopPropagation()} // Prevent modal close on clicking inside
           >
             <div className="flex justify-end p-2">

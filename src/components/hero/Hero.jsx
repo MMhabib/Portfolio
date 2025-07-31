@@ -1,9 +1,11 @@
 import { useRef } from "react";
 import "./style.css";
 import { skillsData } from "../../constants";
-import profile from "../../assets/Habib.jpg";
+import profile from "../../assets/habib.png";
+import githublogo from '../../assets/tech_logo/github.png'
 import logo from "../../assets/logo.png";
 import { TypewriterEffectSmooth } from "../TypewriterEffectSmooth";
+import { FaFacebook, FaGithub, FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 
 const Hero = () => {
   const menuRef = useRef(null);
@@ -38,7 +40,7 @@ const Hero = () => {
         <nav className=" fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-2 md:px-8 lg:px-24 xl:px-32 md:py-4 w-full bg-black/70 backdrop-blur-md shadow-md">
           <a href="#">
             <img
-              className="h-8 max-lg:w-34 max-lg:h-7"
+              className="h-8 max-lg:w-34 max-lg:h-7 drop-shadow-sm drop-shadow-blue-600"
               src={logo}
               alt=""
               width="157"
@@ -68,9 +70,7 @@ const Hero = () => {
             <a href="#contact" className="hover:text-gray-300">
               Contact
             </a>
-            <button className="md:hidden bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-medium transition">
-              Sign up
-            </button>
+            
             <button
               onClick={closeMenu}
               className="md:hidden bg-gray-900 hover:bg-gray-800 text-white p-2 rounded-md aspect-square font-medium transition"
@@ -91,9 +91,11 @@ const Hero = () => {
               </svg>
             </button>
           </div>
-          <button className="hidden md:block bg-indigo-600 hover:bg-indigo-700 text-white md:px-4 lg:px-6 py-2.5 rounded-full font-medium transition">
-            Habib
-          </button>
+          <div className=" flex space-x-2 xl:space-x-4 max-lg:hidden text-white  font-medium drop-shadow-lg drop-shadow-blue-700 ">
+            <a href="https://github.com/MMhabib"><FaGithub  className="h-8 w-8  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a>
+            <a href="https://www.linkedin.com/in/mmhabib/"><FaLinkedin   className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  "/></a>
+            <a href="https://www.facebook.com/habibczs/"><FaFacebook  className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a>
+          </div>
           <button
             onClick={openMenu}
             className="md:hidden bg-gray-900 hover:bg-gray-800 text-white p-2 rounded-md aspect-square font-medium transition"
@@ -116,13 +118,14 @@ const Hero = () => {
           </button>
         </nav>
 
-        <main className="flex flex-col  lg:flex-row items-center max-md:text-center justify-between px-4 md:px-10 lg:px-12 xl:px-32 pt-28 md:pt-40 w-full">
+        <main className="flex flex-col  lg:flex-row items-center max-md:text-center justify-between px-4 md:px-10 lg:px-12 xl:px-32 pt-28 md:pt-36 w-full">
           <div className="flex flex-col items-center max-w-4xl  lg:items-start ">
            <h1 className="font-semibold max-w-full leading-tight ">
   <TypewriterEffectSmooth
     words={[
       {
         text: "Hi, I am M.M. Habib.",
+       
         className: "text-4xl md:text-5xl lg:text-6xl text-blue-700",
       },
     
@@ -132,6 +135,8 @@ const Hero = () => {
     words={[
       
       {
+        
+        cursorClassName:'h-2',
         text: " A Full-Stack Developer from Cumilla, Bangladesh. I specialize in building responsive web interfaces using React.js, Next.js, and Tailwind CSS. I’ve completed a software development internship and worked on projects like a car rental app and an admin dashboard. I enjoy solving problems, writing clean code, and learning new technologies.",
         className: "text-base md:text-base lg:text-xl text-gray-500 leading-relaxed",
       },
@@ -167,14 +172,14 @@ const Hero = () => {
                 href="#contact"
                 className="text-indigo-600 bg-indigo-100 px-5 py-2 rounded-full text-base font-medium hover:bg-indigo-200 transition"
               >
-                Let Connect
+                {`Let's Connect`}
               </a>
             </div>
           </div>
-          <div aria-label="Photos of leaders" className="mt-12 pb-6">
+          <div  className=" pb-6 flex justify-center items-center   ">
             <img
               alt="A professional woman working on a laptop"
-              className="h-96 max-w-96 w-fit rounded-lg hover:scale-105 transition duration-300 object-cover flex-shrink-0 shadow-lg"
+              className="h-96 max-w-96 w-fit rounded-b-2xl hover:scale-105 transition duration-300 object-cover flex-shrink-0  "
               src={profile}
             />
           </div>

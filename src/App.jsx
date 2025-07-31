@@ -32,7 +32,7 @@ function App() {
   return (
     
 
-       <div className="bg-[#050414]">
+       <div className="bg-[#050414] w-full overflow-x-hidden">
 
       <Hero/>
       
