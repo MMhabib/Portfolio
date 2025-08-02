@@ -142,7 +142,7 @@ const Hero = () => {
                 className="text-4xl md:text-5xl lg:text-6xl"
               />
               <Texteffect
-                text=" I am M.M. Habib"
+                text=" I am M.M Habib"
                 as="span"
                 className="text-4xl md:text-5xl lg:text-6xl tracking-wide text-blue-700 "
               />
