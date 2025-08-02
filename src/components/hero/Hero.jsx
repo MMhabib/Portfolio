@@ -4,9 +4,10 @@ import { skillsData } from "../../constants";
 import profile from "../../assets/habib.png";
 
 import logo from "../../assets/logo.png";
-import { TypewriterEffectSmooth } from "../TypewriterEffectSmooth";
-import { FaFacebook, FaGithub, FaLinkedin,} from "react-icons/fa6";
 
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa6";
+import ShimmerWrapper from "../ShimmerWrapper";
+import { Texteffect } from "../Texteffect";
 
 const Hero = () => {
   const menuRef = useRef(null);
@@ -29,7 +30,6 @@ const Hero = () => {
 
   return (
     <>
-    
       <section
         id="home"
         className="flex flex-col items-center bg-gradient-to-b from-black to-[#1A0033] text-white pb-16 text-sm"
@@ -69,11 +69,11 @@ const Hero = () => {
             <a href="#experience" className="hover:text-gray-300">
               Experience
             </a>
-            
+
             <a href="#contact" className="hover:text-gray-300">
               Contact
             </a>
-            
+
             <button
               onClick={closeMenu}
               className="md:hidden bg-gray-900 hover:bg-gray-800 text-white p-2 rounded-md aspect-square font-medium transition"
@@ -94,10 +94,22 @@ const Hero = () => {
               </svg>
             </button>
           </div>
-          <div className=" flex space-x-2 lg:space-x-4 max-md:hidden text-white  font-medium drop-shadow-lg drop-shadow-blue-700 ">
-            <a target="blank" href="https://github.com/MMhabib"><FaGithub  className="h-8 w-8  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a>
-            <a target="blank" href="https://www.linkedin.com/in/mmhabib/"><FaLinkedin   className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  "/></a>
-            <a target="blank" href="https://www.facebook.com/habibczs/"><FaFacebook  className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"/></a>
+          <div className=" flex space-x-2 lg:space-x-4 max-md:hidden text-white  font-medium  ">
+            <ShimmerWrapper className="rounded-full ">
+              <a target="blank" href="https://github.com/MMhabib">
+                <FaGithub className="h-8 w-8 text-black dark:text-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 rounded-2xl hover:scale-110" />
+              </a>
+            </ShimmerWrapper>
+            <ShimmerWrapper className="rounded-lg">
+              <a target="blank" href="https://www.linkedin.com/in/mmhabib/">
+                <FaLinkedin className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  " />
+              </a>
+            </ShimmerWrapper>
+            <ShimmerWrapper className="rounded-full">
+              <a target="blank" href="https://www.facebook.com/habibczs/">
+                <FaFacebook className="h-8 w-8 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" />
+              </a>
+            </ShimmerWrapper>
           </div>
           <button
             onClick={openMenu}
@@ -123,54 +135,48 @@ const Hero = () => {
 
         <main className="flex flex-col  lg:flex-row items-center max-md:text-center justify-between px-4 md:px-10 lg:px-12 xl:px-32 pt-28 md:pt-36 w-full">
           <div className="flex flex-col items-center max-w-4xl  lg:items-start ">
-           <h1 className="font-semibold max-w-full leading-tight ">
-  <TypewriterEffectSmooth
-    words={[
-      {
-        text: "Hi, I am M.M. Habib.",
-       
-        className: "text-4xl md:text-5xl lg:text-6xl text-blue-700",
-      },
-    
-    ]}
-  />
-  <TypewriterEffectSmooth
-    words={[
-      
-      {
-        
-        cursorClassName:'h-2',
-        text: " A Full-Stack Developer from Cumilla, Bangladesh. I specialize in building responsive web interfaces using React.js, Next.js, and Tailwind CSS. I’ve completed a software development internship and worked on projects like a car rental app and an admin dashboard. I enjoy solving problems, writing clean code, and learning new technologies.",
-        className: "text-base md:text-base lg:text-xl text-gray-500 leading-relaxed",
-      },
-    ]}
-  />
-</h1>
-
-
+            <h1 className="font-semibold max-w-full leading-tight ">
+              <Texteffect
+                text="Hi,"
+                as="span"
+                className="text-4xl md:text-5xl lg:text-6xl"
+              />
+              <Texteffect
+                text=" I am M.M. Habib"
+                as="span"
+                className="text-4xl md:text-5xl lg:text-6xl tracking-wide text-blue-700 "
+              />
+              <Texteffect
+                
+                text="A Full-Stack Developer from Cumilla, Bangladesh. I specialize in building responsive web interfaces using React.js, Next.js, and Tailwind CSS. I’ve completed a software development internship and worked on projects like a car rental app and an admin dashboard. I enjoy solving problems, writing clean code, and learning new technologies."
+                className="text-base md:text-base lg:text-xl text-gray-500 leading-relaxed"
+              />
+            </h1>
 
             <div className="flex flex-col md:flex-row items-center mt-4 gap-3">
-              <a  href="https://drive.google.com/drive/folders/1m16qxO1jWbYK4rPHbjDRiHk_C30-9o-o?usp=drive_link" > <button 
-                className="bg-indigo-600 text-white text-base px-6 pr-2.5 py-2.5 rounded-full  font-medium flex items-center space-x-2 hover:bg-indigo-700 transition"
-                type="button"
-              >
-                <span>Resume</span>
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+              <a href="https://drive.google.com/drive/folders/1m16qxO1jWbYK4rPHbjDRiHk_C30-9o-o?usp=drive_link">
+                {" "}
+                <button
+                  className="bg-indigo-600 text-white text-base px-6 pr-2.5 py-2.5 rounded-full  font-medium flex items-center space-x-2 hover:bg-indigo-700 transition"
+                  type="button"
                 >
-                  <path
-                    d="M4.821 11.999h13.43m0 0-6.714-6.715m6.715 6.715-6.715 6.715"
-                    stroke="#fff"
-                    strokeWidth="1.8"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
+                  <span>Resume</span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.821 11.999h13.43m0 0-6.714-6.715m6.715 6.715-6.715 6.715"
+                      stroke="#fff"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
               </a>
               <a
                 href="#contact"
@@ -180,7 +186,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div  className=" pb-6 flex justify-center items-center   ">
+          <div className=" pb-6 flex justify-center items-center   ">
             <img
               alt="A professional woman working on a laptop"
               className="h-96 max-w-96 w-fit rounded-b-2xl hover:scale-150 transition duration-300 object-cover flex-shrink-0  "
@@ -212,7 +218,6 @@ const Hero = () => {
 
           <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-[#1A0033] to-transparent"></div>
         </div>
-        
       </section>
     </>
   );
