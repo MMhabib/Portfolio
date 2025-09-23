@@ -36,8 +36,7 @@ import shadcnlogo from "./assets/tech_logo/shadnui.png";
 
 // Experience Section Logo's
 import webverseLogo from "./assets/company_logo/webverse_logo.png";
-import agcLogo from "./assets/company_logo/agc_logo.png";
-import newtonschoolLogo from "./assets/company_logo/newtonschool_logo.png";
+
 
 // Education Section Logo's
 
@@ -45,6 +44,7 @@ import newtonschoolLogo from "./assets/company_logo/newtonschool_logo.png";
 import carrental from './assets/work_logo/Carrental.jpg'
 import Admin from './assets/work_logo/Admin.jpg'
 import recipeapp from './assets/work_logo/recipeapp.jpg'
+import job from './assets/work_logo/jobportal.jpg'
 
 export const skillsData = [
   { name: "HTML", logo: htmlLogo },
@@ -242,6 +242,45 @@ Deployed for quick preview and ready for backend integration.`,
   },
   {
     id: 2,
+    title: "Job Portal",
+    description: `Job_portal is a full‑stack job portal application built with React (frontend), styled using Tailwind CSS and shadcn/ui, and a backend powered by Node.js and Express.js. It supports multiple user roles—Job Seeker, Recruiter, and optionally Admin—and provides end-to-end features for user authentication, job postings, job browsing, and application management.
+
+Core functionalities include:
+
+Role-based authentication: secure login/signup flows with JSON Web Tokens (JWT).
+
+Job management: Recruiters can create, update, and delete job listings.
+
+Job discovery: Job seekers can browse, search, and filter job posts.
+
+Application flow: Job seekers apply to jobs; recruiters review and manage applications.
+
+Responsive UI: crafted using Tailwind CSS and shadcn/ui components.
+
+RESTful API: Express.js backend with clear endpoint structure.
+
+Database storage: MongoDB or your preferred NoSQL/SQL database.
+
+The app demonstrates comprehensive knowledge of full‑stack development—from frontend component design and state management to backend routing, security, and database interaction.`,
+    image: job,
+    logos: [
+      { name: "HTML", logo: htmlLogo },
+      { name: "CSS", logo: cssLogo },
+      { name: "JavaScript", logo: javascriptLogo },
+      { name: "React JS", logo: reactjsLogo },
+      { name: "Tailwind CSS", logo: tailwindcssLogo },
+       { name: "Express JS", logo: expressjsLogo },
+      { name: "Node JS", logo: nodejsLogo },
+      { name: "MongoDB", logo: mongodbLogo },
+      { name: "Shadc/ui", logo: shadcnlogo},
+      { name: "Vercel", logo: vercelLogo },
+      { name: "React icons",},
+    ],
+    github: "https://github.com/MMhabib/Job_portal.git",
+    webapp: "https://job-portal-six-zeta-99.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Recipe-Finding App",
     description:
       `Recipe Finder App is a responsive web application that allows users to search and explore a wide range of recipes using The Meal Database API. Users can find recipes either by entering a recipe name or a specific recipe ID. Upon selection, the app displays detailed information including the ingredients, preparation instructions, and an embedded video tutorial if available. Built using React, it provides a smooth and dynamic user experience. React Router is utilized for client-side routing to enable seamless navigation across pages. Video playback is handled through React Player, ensuring compatibility with YouTube content. The application is designed to be intuitive and informative, helping users quickly discover and learn new recipes. This project demonstrates API integration, component-based architecture, and video embedding in React.`,

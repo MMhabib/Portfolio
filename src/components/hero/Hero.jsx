@@ -53,7 +53,7 @@ const Hero = () => {
             className="flex items-center md:gap-6 lg:gap-8 xl:gap-12  font-medium text-base max-md:text-base md:max-lg:text-sm
              max-md:fixed max-md:top-0 max-md:left-0 max-md:w-0 max-md:h-screen max-md:bg-black/80 max-md:backdrop-blur max-md:transition-all max-md:duration-300 max-md:overflow-auto max-md:flex-col max-md:space-y-6  max-md:justify-center max-md:items-center z-50"
           >
-            <a href="#home" className="hover:text-gray-300 ">
+            <a href="#" className="hover:text-gray-300 ">
               About
             </a>
             <a href="#skills" className="hover:text-gray-300">
@@ -186,13 +186,13 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className=" pb-6 flex justify-center items-center   ">
+          {/* <div className=" pb-6 flex justify-center items-center   ">
             <img
               alt="A professional woman working on a laptop"
               className="h-96 max-w-96 w-fit rounded-b-2xl hover:scale-150 transition duration-300 object-cover flex-shrink-0  "
               src={profile}
             />
-          </div>
+          </div> */}
         </main>
 
         <div className="overflow-hidden w-full relative max-w-5xl mx-auto select-none mt-16">
