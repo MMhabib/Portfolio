@@ -125,7 +125,7 @@ export const experiences = [
     img: webverseLogo,
     role: "Software Developer(Intern)",
     company: "IPIT LIMITED",
-    date: "March 2024 - June 2024",
+    date: "February 2025 - July 2025",
     desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
     skills: [
       "HTML",
